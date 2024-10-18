@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+#playButton {
+    padding: 10px;
+    position: absolute;
+    background-color: #00000000;
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display:grid;
+    place-items: center;
+}
+.mensaje h1{
+    color: rgb(230, 224, 216);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 45px;
+    font-weight: 300; /* Peso ligero */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.flower-0{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: giro 8s linear infinite;
+    left: 47%;
+    top: 41%;
+}
+
+.leafG {
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    background-color: #d0ff00;
+    border-radius: 3px 50px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 14px 2px rgba(236, 224, 7, 0.7);
+}
+.dotT{
+    position: absolute;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(96, 54, 0);
+    border-radius: 50%;
+    animation: dot 5s ease-in-out infinite;
+}
+
+.flower-1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: giro 4s linear infinite;
+    left: 9%;
+    top: 36%;
+}
+
+.flower-2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: giro 4s linear infinite;
+    left: 85%;
+    top: 29%;
+}
+
+.flower-3{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: giro 4s linear infinite;
+    left: 81%;
+    top: 70%;
+}
+
+
+.flower-4{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: giro 4s linear infinite;
+    left: 34%;
+    top: 15%;
+}
+
+.flower-5{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: giro 4s linear infinite;
+    left: 60%;
+    top: 17%;
+}
+
+.flower-6{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: giro 4s linear infinite;
+    left: 18%;
+    top: 74%;
+}
+
+.flower-7{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: giro 4s linear infinite;
+    left: 48%;
+    top: 78%;
+}
+
+.leaf {
+    position: absolute;
+    z-index: 1;
+    width: 33px;
+    height: 33px;
+    background-color: #edefe4;
+    border-radius: 2px 50px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 14px 2px rgba(248, 246, 212, 0.7);
+}
+
+.dot{
+    position: absolute;
+    z-index: 2;
+    width: 33px;
+    height: 33px;
+    background-color: rgb(210, 221, 5);
+    border-radius: 50%;
+    animation: dot 4s ease-in-out infinite;
+}
+.leaf-0{
+    transform: rotate(0deg) translate(-35px, -35px) scale(2);
+}
+.leaf-1{
+    transform: rotate(22.5deg) translate(-35px, -35px) scale(2);
+}
+.leaf-2{
+    transform: rotate(45deg) translate(-35px, -35px) scale(2);
+}
+.leaf-3{
+    transform: rotate(67.5deg) translate(-35px, -35px) scale(2);
+}
+.leaf-4{
+    transform: rotate(90deg) translate(-35px, -35px) scale(2);
+}
+.leaf-5{
+    transform: rotate(112.5deg) translate(-35px, -35px) scale(2);
+}
+.leaf-6{
+    transform: rotate(135deg) translate(-35px, -35px) scale(2);
+}
+.leaf-7{
+    transform: rotate(157.5deg) translate(-35px, -35px) scale(2);
+}
+.leaf-8{
+    transform: rotate(180deg) translate(-35px, -35px) scale(2);
+}
+.leaf-9{
+    transform: rotate(202.5deg) translate(-35px, -35px) scale(2);
+}
+.leaf-10{
+    transform: rotate(225deg) translate(-35px, -35px) scale(2);
+}
+.leaf-11{
+    transform: rotate(247.5deg) translate(-35px, -35px) scale(2);
+}
+.leaf-12{
+    transform: rotate(270deg) translate(-35px, -35px) scale(2);
+}
+.leaf-13{
+    transform: rotate(292.5deg) translate(-35px, -35px) scale(2);
+}
+.leaf-14{
+    transform: rotate(315deg) translate(-35px, -35px) scale(2);
+}
+.leaf-15{
+    transform: rotate(337.5deg) translate(-35px, -35px) scale(2);
+}
+
+@keyframes giro{
+    0%{
+        transform: scale(0) translate(-35px, -35px);
+    }
+    30%{
+        transform: scale(1) rotate(50deg);
+    }
+    70%{
+        transform: scale(1) rotate(100deg);
+    }
+    80%{
+        transform: scale(1) rotate(180deg);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes dot{
+    0%, 12%{
+        transform:  scale(0);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+    25%{
+        transform: scale(0.95);
+    }
+    30%, 55%{
+        transform: scale(1);
+    }
+    58%{
+        transform: scale(1.1);
+    }
+    70%,100%{
+        transform: scale(0);
+    }
+}
+/* -------------------------------------------------------------- */
